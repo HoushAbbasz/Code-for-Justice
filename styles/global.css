@@ -1,6 +1,6 @@
 
 nav {
-  background-color: #8f4600;
+  background-color: #BBC863;
   position: fixed;
   top: 20vh;
   left: 5vw;
@@ -21,12 +21,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center; /* centers vertically */
-  background-color: rgba(143, 70, 0, 0.9); 
+  background-color: #BBC863; 
 }
 
 .header__title {
   font-size: 2.5rem; 
-  color: #ffdfbf;
+  color: #658C58;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
@@ -37,26 +37,47 @@ header {
 
 
 body{
-    background-color: #ffdfbf ;
+    background-color: #F0E491 ;
 }
 
 footer{
-    background-color: rgba(143, 70, 0, 0.8);
+    background-color: #BBC863;
     position: fixed;
     bottom: 0;
     left: 0;
     height: 10vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link-group{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  color: #F0E491;
+  margin: auto;
+}
+
+.footer-link{
+  color: #658C58;
+}
+
+
+.footer-link:hover{
+  text-decoration: underline;
 }
 
 .nav-button{
     margin: auto;
     border: none;
-    background-color: #ffdfbf;
+    background-color: #F0E491;
     border-radius: 25px;
     height: 4.5vh;
     width: 15vh;
-    color: #8f4600;
+    color: #658C58;
     font-weight: 600;
     transition: all 0.3s ease;
     font-size: 1rem;
@@ -66,22 +87,30 @@ footer{
 }
 
 .nav-button:hover {
-  background-color: #ffd2a0;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* Responsiveness */
 @media (max-width: 992px) {
+
+  .footer-link-words{
+    font-size: 1.8rem;
+  }
+
   .header__title {
     font-size: 1.8rem;
   }
 
   .nav-button {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
+
+  .footer-link-words{
+    font-size: 1.5rem;
+  }
 
   .header__title {
     font-size: 1.5rem;
@@ -89,11 +118,15 @@ footer{
   .nav-button {
     height: 5vh;
     width: 18vw; 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 576px) {
+
+  .footer-link-words{
+    font-size: 1.2rem;
+  }
 
   .header__title {
     font-size: 1.2rem;
@@ -102,7 +135,7 @@ footer{
     .nav-button {
     height: 6vh;
     width: 28vw; 
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
 
