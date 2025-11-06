@@ -1,32 +1,44 @@
 
 nav {
-  background-color: #8f4600;
-  position: fixed;
-  top: 20vh;
-  left: 5vw;
-  height: 10vh;
-  width: 90vw;
-  border-radius: 25px;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 7vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
 header {
   position: fixed;
-  top: 5vh;
+  top: 0;
   left: 0;
   height: 10vh;
   width: 100vw;
   display: flex;
+  border-radius: 25px;
   justify-content: center;
-  align-items: center; /* centers vertically */
-  background-color: rgba(143, 70, 0, 0.9); 
+  align-items: center; 
+  background-color: #BBC863; 
+  z-index: 1;
 }
+
+.nav-logo{
+  position: relative;
+  height: 5vh;
+  width: 60px;
+  z-index: 2;
+  left: calc(100% - 75px); 
+}
+
+.nav-logo:hover {
+  transform: scale(1.08);
+}
+
 
 .header__title {
   font-size: 2.5rem; 
-  color: #ffdfbf;
+  color: #658C58;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
@@ -37,72 +49,72 @@ header {
 
 
 body{
-    background-color: #ffdfbf ;
+    background-color: #F0E491 ;
 }
 
 footer{
-    background-color: rgba(143, 70, 0, 0.8);
+    background-color: #BBC863;
     position: fixed;
     bottom: 0;
     left: 0;
     height: 10vh;
     width: 100vw;
-}
-
-.nav-button{
-    margin: auto;
-    border: none;
-    background-color: #ffdfbf;
-    border-radius: 25px;
-    height: 4.5vh;
-    width: 15vh;
-    color: #8f4600;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 1rem;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    border-radius: 25px;
 }
 
-.nav-button:hover {
-  background-color: #ffd2a0;
-  transform: scale(1.05);
+.link-group{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  color: #F0E491;
+  margin: auto;
+}
+
+.footer-link{
+  color: #658C58;
+}
+
+
+.footer-link:hover{
+  text-decoration: underline;
 }
 
 /* Responsiveness */
 @media (max-width: 992px) {
+
+  .footer-link-words{
+    font-size: 1.8rem;
+  }
+
   .header__title {
     font-size: 1.8rem;
   }
 
-  .nav-button {
-    font-size: 0.95rem;
-  }
 }
 
 @media (max-width: 768px) {
 
-  .header__title {
+  .footer-link-words{
     font-size: 1.5rem;
   }
-  .nav-button {
-    height: 5vh;
-    width: 18vw; 
-    font-size: 0.9rem;
+
+  .header__title {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
 
-  .header__title {
+  .footer-link-words{
     font-size: 1.2rem;
   }
 
-    .nav-button {
-    height: 6vh;
-    width: 28vw; 
-    font-size: 0.85rem;
+  .header__title {
+    font-size: 1.2rem;
   }
 }
 
