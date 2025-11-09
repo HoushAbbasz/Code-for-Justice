@@ -187,11 +187,11 @@ img.kidney_beans  {
   text-align: center;
 }
 
-/* h2, h3 {
+h2, h3 {
   color: #2c5f2d;
   margin-bottom: 1rem;
   text-align: center;
-} */
+}
 p, h2, h3 {
   text-align: center;
   line-height: 1.6;
