@@ -4,6 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe page</title>
+    <link rel="stylesheet" href="styles/recipe.css">
+    <script src="recipe.js"></script>
+</head>
+<body>
+   
+<h1>Bites of Health</h1>
+        <input type="text" id="searchBar" placeholder="Search recipes...">
+     <!-- Filter Buttons-->
+      <div class="filters">
+        <button onclick="filterRecipes('All')">All</button>
+        <button onclick="filterRecipes('Breakfast')">Breakfast</button>
+        <button onclick="filterRecipes('Lunch')">Lunch</button>
+        <button onclick="filterRecipes('Dinner')">Dinner</button>
+        <button onclick="filterRecipes('Vegetarian')">Vegetarian</button>
+      </div>
+
+      <!--Recipe Cards-->
+
+      <div class="recipe-container" id="recipeContainer">
+    <!--breakfast-->
+        <div class="recipe-card" data-category="Breakfast Vegetarian">
+            <img src="images/pb oat.jpg" alt="oatmeal">
+            <h3> Oatmeal with Banana & Peanut Butter</h3>
+            <p> Affordable, nutritious breakfast.</p>
+            <ul>
+                <li> Time: 10 min</li>
+                <li> Calories: 300kcal</li>
+                <li> Cost: $0.80 per serving</li>
+                <li>Ingredients: Rolled oats, banana, peanut butter, milk/water, cinnamon</li>
+            </ul>
+      </div>
+
+      <div class="recipe-container" id="recipeContainer">
+        <div class="recipe-card" data-category="Breakfast">
+            <img src="images/scrambled egg.webp" alt="Scrambled Eggs">
+            <h3> Scrambled egg with veggies</h3>
+            <p> Affordable, nutritious breakfast.</p>
+            <ul>
+                <li> Time: 15 min</li>
+                <li> Calories: 250kcal</li>
+                <li> Cost: $1.00 per serving</li>
+                <li>Ingredients: 2 eggs, spinach, tomatoes, onions, oil</li>
+            </ul>
+      </div>
+
+      <div class="recipe-container" id="recipeContainer">
+        <div class="recipe-card" data-category="Breakfast Vegetarian">
+            <img src="images/yogurt.jpg" alt="Yogurt">
+            <h3> Yogurt with Fruit and seeds</h3>
+            <p> Affordable, nutritious breakfast.</p>
+            <ul>
+                <li> Time: 5 min</li>
+                <li> Calories: 200kcal</li>
+                <li> Cost: $1.20 per serving</li>
+                <li>Ingredients:Plain yogurt, seasonal fruit, chia/sunflower seeds</li>
+            </ul>
+      </div>
+
+      <div class="recipe-container" id="recipeContainer">
+        <div class="recipe-card" data-category="Lunch Vegetarian">
+            <img src="images/chickpea-salad.jpg" alt="Chickpea & Tomato Salad">
+            <h3> Chickpea & Tomato Salad</h3>
+            <p> Affordable, nutritious, delicious lunch.</p>
+            <ul>
+                <li> Time: 10 min</li>
+                <li> Calories: 220kcal</li>
+                <li> Cost: $1.00 per serving</li>
+                <li>Ingredients: Chickpeas, cherry tomatoes, cucumbers, lemon juice, olive oil</li>
+            </ul>
+      </div>
+
+        <div class="recipe-container" id="recipeContainer">
+        <div class="recipe-card" data-category="Lunch Vegetarian">
+            <img src="images/lentil soup.jpg" alt="Lentil & vegetable soup">
+            <h3> Lentil & Vegetable Soup</h3>
+            <p> Affordable, nutritious, delicious lunch.</p>
+            <ul>
+                <li> Time: 35 min</li>
+                <li> Calories: 350kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients: Lentils, carrots, onions, tomatoes, spinach, spices</li>
+            </ul>
+      </div>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe page</title>
     <link rel="stylesheet" href="recipe.css">
 
 </head>
