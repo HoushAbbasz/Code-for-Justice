@@ -1,34 +1,82 @@
 
 nav {
-  background-color: #8f4600;
   position: fixed;
-  top: 20vh;
-  left: 5vw;
-  height: 10vh;
-  width: 90vw;
-  border-radius: 25px;
+  top: 2vh;
+  left: 2vw;
+  height: 7vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  z-index: 4;
 }
 
 header {
   position: fixed;
-  top: 5vh;
+  top: 0;
   left: 0;
   height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; /* centers vertically */
-  background-color: rgba(143, 70, 0, 0.9); 
+  align-items: center; 
+  background-color: lightgreen; 
+  z-index: 2;
+}
+
+.nav-logo{
+  position: relative;
+  height: 5vh;
+  width: 60px;
+  z-index: 2;
+  left: calc(100% - 75px); 
+}
+
+.nav-logo:hover {
+  transform: scale(1.08);
+}
+
+.nav-menu {
+  list-style: none;
+  position: fixed;
+  top: 10vh;            
+  left: 1vw;             
+  background-color: rgb(41,55,40);  
+  border-radius: 8px;
+  padding: 10px 0;
+  margin: 0;
+  display: none;        
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 4;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+  font-weight: 500;
+}
+
+.nav-menu li a:hover {
+  background-color: rgb(101, 140, 88);
+}
+
+.nav-toggle{
+  display: none;
+}
+
+/* When the nav-toggle checkbox is checked, show the menu */
+.nav-toggle:checked + nav .nav-menu {
+  display: flex;
+  animation: slideDown 0.3s ease forwards;
 }
 
 .header__title {
-  font-size: 2.5rem; 
-  color: #ffdfbf;
+  font-size: 3rem; 
+  color: #658C58;
   font-family: "Pacifico", cursive;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   letter-spacing: 3px;
   text-align: center;
@@ -37,51 +85,64 @@ header {
 
 
 body{
-    background-color: #ffdfbf ;
+    background-color: white ;
 }
 
 footer{
-    background-color: rgba(143, 70, 0, 0.8);
+    background-color:  lightgreen;
     position: fixed;
     bottom: 0;
     left: 0;
     height: 10vh;
     width: 100vw;
-}
-
-.nav-button{
-    margin: auto;
-    border: none;
-    background-color: #ffdfbf;
-    border-radius: 25px;
-    height: 4.5vh;
-    width: 15vh;
-    color: #8f4600;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    z-index: 2;
 }
 
-.nav-button:hover {
-  background-color: #ffd2a0;
-  transform: scale(1.05);
+.footer-icon{
+    height: 6vh;
+    width: 4vw;
+    border-radius: 1vh;
 }
+
+.footer-icon:hover{
+    transform: scale(1.08);
+}
+
+.footer-link{
+  background: none;
+  border: none
+}
+
+.copy-right{
+  font-size: 1.5rem; 
+  color: #658C58;
+  font-weight: 1000;
+  padding: 2vw;
+}
+
+.link-group{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  color: #F0E491;
+  margin: auto;
+  bottom: 1.5vh;
+  right: 2vw;
+}
+
+
 
 /* Responsiveness */
-@media (max-width: 992px) {
-  .header__title {
-    font-size: 1.8rem;
-  }
-
-  .nav-button {
-    font-size: 0.95rem;
-  }
-}
 
 @media (max-width: 768px) {
+
+  .copy-right{
+    font-size: 1.25rem;
+  }
 
   .header__title {
     font-size: 1.5rem;
@@ -89,11 +150,15 @@ footer{
   .nav-button {
     height: 5vh;
     width: 18vw; 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 576px) {
+
+  .copy-right{
+    font-size: 1rem;
+  }
 
   .header__title {
     font-size: 1.2rem;
@@ -102,9 +167,8 @@ footer{
     .nav-button {
     height: 6vh;
     width: 28vw; 
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
-
 
 
