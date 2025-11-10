@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bridge the bite</title>
-    <!-- <link rel="stylesheet" href="styles/global.css"> --> <!--this was messing up with my code might delete-->
-    <link rel="stylesheet" href="nutrition_tips.html"> <!--I went ahead and added this link-->
-    <link rel="stylesheet" href="nutrition_tips.css">   
    
-    <title>Nutrition Tips</title>
+    <link rel="stylesheet" href="nutrition_tips.html">
+    <link rel="stylesheet" href="nutrition_tips.css"> 
+    <link rel="stylesheet" href="styles/recipe.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    
+       <title>Nutrition Tips</title>
 </head>
-
-<header> <!--moved the header outside of the body-->
-    <h1 class="header__title">Nutrition Tips</h1>
-</header>
+ 
 <body>
-    
-        <button class="nav-button">Malnutrition</button>
-        <button class="nav-button" href="nutrition_tips.html" a="">Nutrition Tips</button>
-        <button class="nav-button">Recipes</button>
-        <button class="nav-button">Get Involved!</button>
-        <button class="nav-button">Resources</button>
-     </nav>
+    <header> 
+        <h1 class="header__title">Nutrition Tips</h1>
+    </header>
 
-     
-    
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+     <nav>
+    <label for="nav-toggle">
+        <img class="nav-logo" src="images/nav_image.png" alt="Menu">
+    </label>
+      <!-- dropdown menu -->
+                <ul class="nav-menu">
+                    <li><a href="">About malnutrition</a></li>
+                    <li><a href="">Nutrition Tips</a></li>
+                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="">Get Involved</a></li>
+                    <li><a href="">Resources/References</a></li>
+                </ul>
+
+            </nav>            
+  
  <div class="content">
     <section class="firstimage" >
         <img clas="main_image" src="nutritonal tips images/nutrition tip.jpeg" alt="image of affordable and heathy alternative food items.">
     </section>
 
     <section class="season-info" id="c1">
-        <h1 class="title">what season are we in? </h1>
-            <h3 class="second_title">spring</h3>
+        <h1 class="title"> What season are we in? </h1>
+            <h3 class="second_title"> Spring</h3>
             <details>
                 <summary>Fruit</summary> 
                     <p>Strawberries, apricots, cherries, avocados, pineapples</p>
@@ -81,26 +92,26 @@
            
         </section>
    
-      <section  >
+      <section>
         <h1 class="second_title"> No fresh fruits or vegatables?</h1>
-            
             <details>
                 <summary> Alternative options </summary>
                 <p> Alternative options can be checking out canned fruits options or canned vegtables option.</p>
-            <p>one main key takeaway is avoid vegtables with added salts and sugar.</p>
+                <p>one main key takeaway is avoid vegtables with added salts and sugar.</p>
             </details>
      </section>
-    <div class="canned_fruitsvegtables"></div> <!--moved the div out of the section with the secound title-->
-        <img class="kidney_beans" src="nutritonal tips images/low_Beans.jpeg" alt="low sodium dark red kidney beans"> -->
+    <div class="canned_fruitsvegtables"></div>
+        <img class="kidney_beans" src="nutritonal tips images/low_Beans.jpeg" alt="low sodium dark red kidney beans">
+         <!-- <section>  -->
+         <img class="Pear" src="nutritonal tips images/pears_inwater.jpeg" alt="canned pear in water">
+    <!-- </section>  -->
         <aside class="tips_info">
                 <p>* To reduce sodium consumption when using canned vegetables, it is important to rinse them thoroughly to wash away excess salt.</p>
                 <p>*When selecting canned goods, it is always helpful to avoid dented cans because damage can compromise the seal, potentially leading to bacterial contamination. </p>
                 <p>* When selecting canned fruits to avoid excess sugar, look for those packed "in water" instead of "in 100% juice". Especially the ones in syrup. </p>
         </aside>
     </div>
-    <section> 
-         <img class="Pear" src="nutritonal tips images/pears_inwater.jpeg" alt="canned pear in water">
-    </section>
+   
     
 <section class="protein-info" id="c3">
       <h1 class="title">Protein recommendations </h1>
@@ -212,7 +223,7 @@
 </body>
 
 <footer>
-
+<script src="recipe.js"></script>
 </footer>
 
 </html>

@@ -73,7 +73,17 @@ header input{
   }
 }
                     /* this is the beginning of Nutritional tips */
-                    
+    
+                
+summary:hover {
+  color:#4CAF50;
+  background-color: #2c5f2d;
+  border-radius: 16px;
+}
+summary {
+  cursor: pointer;
+}
+
 .content, section, div {
 
   max-width: 900px; 
@@ -139,14 +149,21 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .kidney_beans  {
-  width: 100%;
+  width: 45%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
   object-fit: cover;
 }
 .Pear {
-  width: 100%;
+  width: 45%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+.water_glass {
+   width: 10%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
