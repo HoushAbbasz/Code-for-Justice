@@ -1,30 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NourishNow</title>
-    <link rel="stylesheet" href="styles/global.css">
-</head>
-<header>
-    <h1 class="header__title">NourishNow</h1>
-</header>
-<nav>
-    
-        <button class="nav-button">Malnutrition</button>
-        <button class="nav-button">Nutrition Tips</button>
-        <button class="nav-button">Recipes</button>
-        <button class="nav-button">Get Involved!</button>
-        <button class="nav-button">Resources</button>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bridge the Bite</title>
+            <link rel="stylesheet" href="styles/global.css">
+            <link rel="stylesheet" href="styles/homepage.css">
+        </head>
 
-</nav>
 
-<body>
-    
-</body>
+        <body>
 
-<footer>
+            <header>
+                <h1 class="header__title">Bridge the Bite</h1>
+            </header>
 
-</footer>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            
+            <nav>
 
-</html>
+                <label for="nav-toggle">
+                    <img class="nav-logo" src="images/nav_image.png" alt="Menu">
+                </label>
+
+                <!-- dropdown menu -->
+                <ul class="nav-menu">
+                    <li><a href="">About malnutrition</a></li>
+                    <li><a href="">Nutrition Tips</a></li>
+                    <li><a href="recipe.html">Recipes</a></li>
+                    <li><a href="">Get Involved</a></li>
+                    <li><a href="">Resources/References</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="homepage">
+
+                <div class="slider-track">
+
+                    <!-- repeats images for smoother transition -->
+                    <img class="homepage-images" src="images/homepage_pic.jpg" alt="cooking">
+                    <img class="homepage-images" src="images/food.jpg" alt="whole-foods">
+                    <img class="homepage-images" src="images/malnutrition.png" alt="malnutrition-diagram">
+                    <img class="homepage-images" src="images/community.jpg" alt="volunteering">
+                    <img class="homepage-images" src="images/homepage_pic.jpg" alt="cooking">
+                    <img class="homepage-images" src="images/food.jpg" alt="whole-foods">
+                    <img class="homepage-images" src="images/malnutrition.png" alt="malnutrition-diagram">
+                    <img class="homepage-images" src="images/community.jpg" alt="volunteering">
+                    <img class="homepage-images" src="images/homepage_pic.jpg" alt="cooking">
+                    <img class="homepage-images" src="images/food.jpg" alt="whole-foods">
+                    <img class="homepage-images" src="images/malnutrition.png" alt="malnutrition-diagram">
+                    <img class="homepage-images" src="images/community.jpg" alt="volunteering">
+
+                </div>
+
+                <section class="headline-section">
+                    <h1>Bridging the Food Gap, One Affordable Meal at a Time</h1>   
+                </section>
+
+                <section class="subheading-section">
+                    <h4>Not everyone has equal access to healthy, affordable food. Through simple, low-cost recipes and awareness, we can help make nutrition accessible for all.</h4>
+                </section>
+
+                <img class= "headshot" src="images/headshots/image1.png" alt="bryan">
+                <img class= "headshot" src="images/headshots/image4.png" alt="brittany">
+                <img class= "headshot" src="images/headshots/image3.png" alt="amadeo">
+                <img class= "headshot" src="images/headshots/image2.png" alt="housh">
+                <img class= "headshot" src="images/headshots/image5.png" alt="jazlyn">
+
+                <section class="subheading-section">
+                    <h5>Millions around the world face malnutrition not from lack of effort, but from lack of access. Our goal is to raise awareness and offer practical, budget-friendly recipes that make healthy eating possible for every household.</h5>
+                </section>
+
+            </div>
+
+                <footer>
+
+                    <div>
+                        <p class="copy-right" >2025 Bridge the Bite. All rights reserved.</p>
+                    </div>
+
+                    <div class="link-group">
+
+                        <button class="footer-link" onclick="openIG()"></a>
+                            <img class="footer-icon" src="images/IG.png" alt="instagram-logo"> 
+                        </button>
+
+                        <button class="footer-link" onclick="openFB()">
+                            <img class="footer-icon" src="images/FB.png" alt="facebook-logo"> 
+                        </button>
+                        
+                        <button class="footer-link" onclick="openLI()">
+                            <img class="footer-icon" src="images/LI.png" alt="linkedin-logo"> 
+                        </button>
+
+                    </div>
+
+            </footer>
+
+            <script src="scripts/global.js"></script>
+
+        </body>
+    </html>
