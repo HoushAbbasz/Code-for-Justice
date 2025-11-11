@@ -9,8 +9,8 @@
 }
 
 .auth-page {
-  padding-top: calc(10vh + 16px) !important;
-  padding-bottom: calc(10vh + 16px) !important;
+  padding-top: calc(10vh + 16px);
+  padding-bottom: calc(10vh + 16px);
   min-height: 100vh;
   display: grid;
   place-items: center;
