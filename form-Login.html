@@ -28,8 +28,8 @@
     </nav>
 
     <main class="auth-page">
-      <section class="auth-card">
-        <h1>Login</h1>
+      <section class="auth-card" role="region" aria-labelledby="login-title">
+        <h1 id="login-title">Login</h1>
 
         <form class="auth-form" action="#" method="post" novalidate>
           <label for="username">Username:</label>
@@ -38,6 +38,7 @@
             name="username"
             type="text"
             placeholder="@username12"
+            autocomplete="username"
             required
           />
 
@@ -48,6 +49,7 @@
               name="password"
               type="password"
               placeholder="********"
+              autocomplete="current-password"
               required
             />
           </div>
