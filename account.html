@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="styles/global.css" />
+    <title>Account</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <header>
@@ -18,40 +18,24 @@
         <img class="nav-logo" src="images/nav_image.png" alt="Menu" />
       </label>
       <ul class="nav-menu">
-        <li><a href="">About malnutrition</a></li>
-        <li><a href="">Nutrition Tips</a></li>
-        <li><a href="recipe.html">Recipes</a></li>
-        <li><a href="">Get Involved</a></li>
-        <li><a href="">Resources/References</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="malnutrition.html">About Malnutrition</a></li>
+          <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+          <li><a href="">Resources/References</a></li>
+          <li><a href="homepage.html">Home Page</a></li>
+          <li><a href="developers.html">Meet the Developers</a></li>
       </ul>
     </nav>
 
     <main class="auth-page">
       <section class="form-card">
-        <h1>Login</h1>
-        <form action="/submit_login" method="POST">
-          <label for="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            required
-            placeholder="@username12"
-          />
-
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            placeholder="********"
-          />
-
-          <button class="sub-btn" type="submit">Login</button>
-        </form>
-        <p class="reg-login">
-          Don't have an account? <a href="form-Register.html">Register here</a>.
+        <h1>Account</h1>
+        <p>
+          Welcome back! Use the menu to navigate or manage your profile here.
+        </p>
+        <p>
+          <a href="form-Login.html">Log in</a> •
+          <a href="form-Register.html">Create an account</a>
         </p>
       </section>
     </main>
@@ -72,7 +56,8 @@
         </button>
       </div>
     </footer>
+
     <script src="scripts/global.js"></script>
-    <script src="scripts/login.js"></script>
+    <script src="scripts/account.js"></script>
   </body>
 </html>

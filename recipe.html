@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe page</title>
     <link rel="stylesheet" href="styles/recipe.css">
-    <script src="recipe.js"></script>
+    <link rel="stylesheet" href="styles/global.css">
 </head>
 <body>
-   
+    <div class="content">
+
+    <header>
+        <h1 class="header__title">Bridge the Bite</h1>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+    <nav>
+
+        <label for="nav-toggle">
+            <img class="nav-logo" src="images/nav_image.png" alt="Menu">
+        </label>
+
+        <!-- dropdown menu -->
+        <ul class="nav-menu">
+            <li><a href="malnutrition.html">About malnutrition</a></li>
+            <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+            <li><a href="account.html">Get Involved</a></li>
+            <li><a href="">Resources/References</a></li>
+            <li><a href="homepage.html">Home Page</a></li>
+            <li><a href="developers.html">Meet the Developers</a></li>
+        </ul>
+
+    </nav>
+<div class="search-title">  
 <h1>Bites of Health</h1>
-        <input type="text" id="searchBar" placeholder="Search recipes...">
+</div>
+<div class="search">
+    <input type="text" id="searchBar" placeholder="Search recipes...">
+</div>
      <!-- Filter Buttons-->
       <div class="filters">
         <button onclick="filterRecipes('All')">All</button>
@@ -35,98 +63,6 @@
                 <li>Ingredients: Rolled oats, banana, peanut butter, milk/water, cinnamon</li>
             </ul>
       </div>
-
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Breakfast">
-            <img src="images/scrambled egg.webp" alt="Scrambled Eggs">
-            <h3> Scrambled egg with veggies</h3>
-            <p> Affordable, nutritious breakfast.</p>
-            <ul>
-                <li> Time: 15 min</li>
-                <li> Calories: 250kcal</li>
-                <li> Cost: $1.00 per serving</li>
-                <li>Ingredients: 2 eggs, spinach, tomatoes, onions, oil</li>
-            </ul>
-      </div>
-
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Breakfast Vegetarian">
-            <img src="images/yogurt.jpg" alt="Yogurt">
-            <h3> Yogurt with Fruit and seeds</h3>
-            <p> Affordable, nutritious breakfast.</p>
-            <ul>
-                <li> Time: 5 min</li>
-                <li> Calories: 200kcal</li>
-                <li> Cost: $1.20 per serving</li>
-                <li>Ingredients:Plain yogurt, seasonal fruit, chia/sunflower seeds</li>
-            </ul>
-      </div>
-
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Lunch Vegetarian">
-            <img src="images/chickpea-salad.jpg" alt="Chickpea & Tomato Salad">
-            <h3> Chickpea & Tomato Salad</h3>
-            <p> Affordable, nutritious, delicious lunch.</p>
-            <ul>
-                <li> Time: 10 min</li>
-                <li> Calories: 220kcal</li>
-                <li> Cost: $1.00 per serving</li>
-                <li>Ingredients: Chickpeas, cherry tomatoes, cucumbers, lemon juice, olive oil</li>
-            </ul>
-      </div>
-
-        <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Lunch Vegetarian">
-            <img src="images/lentil soup.jpg" alt="Lentil & vegetable soup">
-            <h3> Lentil & Vegetable Soup</h3>
-            <p> Affordable, nutritious, delicious lunch.</p>
-            <ul>
-                <li> Time: 35 min</li>
-                <li> Calories: 350kcal</li>
-                <li> Cost: $1.50 per serving</li>
-                <li>Ingredients: Lentils, carrots, onions, tomatoes, spinach, spices</li>
-            </ul>
-      </div>
-
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe page</title>
-    <link rel="stylesheet" href="recipe.css">
-    <script src="recipe.js"></script>
-</head>
-<body>
-   
-<h1>Bites of Health</h1>
-        <input type="text" id="searchBar" placeholder="Search recipes...">
-     <!-- Filter Buttons-->
-      <div class="filters">
-        <button onclick="filterRecipes('All')">All</button>
-        <button onclick="filterRecipes('Breakfast')">Breakfast</button>
-        <button onclick="filterRecipes('Lunch')">Lunch</button>
-        <button onclick="filterRecipes('Dinner')">Dinner</button>
-        <button onclick="filterRecipes('Vegetarian')">Vegetarian</button>
-      </div>
-
-      <!--Recipe Cards-->
-
-      <div class="recipe-container" id="recipeContainer">
-    <!--breakfast-->
-        <div class="recipe-card" data-category="Breakfast Vegetarian">
-            <img src="images/pb oat.jpg" alt="oatmeal">
-            <h3> Oatmeal with Banana & Peanut Butter</h3>
-            <p> Affordable, nutritious breakfast.</p>
-            <ul>
-                <li> Time: 10 min</li>
-                <li> Calories: 300kcal</li>
-                <li> Cost: $0.80 per serving</li>
-                <li>Ingredients: Rolled oats, banana, peanut butter, milk/water, cinnamon</li>
-            </ul>
       </div>
 
       <div class="recipe-container" id="recipeContainer">
@@ -141,6 +77,7 @@
                 <li>Ingredients: 2 eggs, spinach, tomatoes, onions, oil</li>
             </ul>
       </div>
+      </div>
 
       <div class="recipe-container" id="recipeContainer">
         <div class="recipe-card" data-category="Breakfast Vegetarian">
@@ -153,6 +90,7 @@
                 <li> Cost: $1.20 per serving</li>
                 <li>Ingredients:Plain yogurt, seasonal fruit, chia/sunflower seeds</li>
             </ul>
+      </div>
       </div>
 
       <div class="recipe-container" id="recipeContainer">
@@ -167,6 +105,7 @@
                 <li>Ingredients: Chickpeas, cherry tomatoes, cucumbers, lemon juice, olive oil</li>
             </ul>
       </div>
+      </div>
 
         <div class="recipe-container" id="recipeContainer">
         <div class="recipe-card" data-category="Lunch Vegetarian">
@@ -180,7 +119,38 @@
                 <li>Ingredients: Lentils, carrots, onions, tomatoes, spinach, spices</li>
             </ul>
       </div>
+        </div>
 
 
+
+        <footer>
+
+            <div>
+                <p class="copy-right" >2025 Bridge the Bite. All rights reserved.</p>
+            </div>
+
+            <div class="link-group">
+
+                <button class="footer-link" onclick="openIG()"></a>
+                    <img class="footer-icon" src="images/IG.png" alt="instagram-logo"> 
+                </button>
+
+                <button class="footer-link" onclick="openFB()">
+                    <img class="footer-icon" src="images/FB.png" alt="facebook-logo"> 
+                </button>
+                
+                <button class="footer-link" onclick="openLI()">
+                    <img class="footer-icon" src="images/LI.png" alt="linkedin-logo"> 
+                </button>
+
+            </div>
+
+        </footer>
+
+        <script src="scripts/global.js"></script>
+        <script src="recipe.js"></script>
+
+        </div>
+        </div>
 </body>
 </html>
