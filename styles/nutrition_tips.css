@@ -1,3 +1,8 @@
+.main-content{
+    margin-top: 12.5vh;
+    margin-bottom: 12vh;
+}
+
 summary:hover {
   color:#4CAF50;
   background-color: #2c5f2d;
@@ -112,5 +117,23 @@ h2, h3 {
 p, h2, h3 {
   text-align: center;
   line-height: 1.6;
+}
+
+#backToTop{
+    position: relative;
+    bottom: 20px;
+    left:  90%;
+    background-color: #658C58;;
+    color:white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display:none;
+}
+
+#backToTop:hover{
+    transform: scale(1.08);
 }
                     /*this is the end of my nutrition tips*/
