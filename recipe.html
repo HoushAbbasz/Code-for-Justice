@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,37 +10,33 @@
     <link rel="stylesheet" href="styles/global.css">
 </head>
 <body>
-    <div class="content">
 
-    <header>
-        <h1 class="header__title">Bridge the Bite</h1>
-    </header>
+            <header>
+                <h1 class="header__title">Bridge the Bite</h1>
+            </header>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    
-    <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            
+            <nav>
 
-        <label for="nav-toggle">
-            <img class="nav-logo" src="images/nav_image.png" alt="Menu">
-        </label>
+                <label for="nav-toggle">
+                    <img class="nav-logo" src="images/nav_image.png" alt="Menu">
+                </label>
 
-        <!-- dropdown menu -->
-        <ul class="nav-menu">
-            <li><a href="malnutrition.html">About malnutrition</a></li>
-            <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
-            <li><a href="account.html">Get Involved</a></li>
-            <li><a href="">Resources/References</a></li>
-            <li><a href="homepage.html">Home Page</a></li>
-            <li><a href="developers.html">Meet the Developers</a></li>
-        </ul>
+                <!-- dropdown menu -->
+                <ul class="nav-menu">
+                    <li><a href="malnutrition.html">About Malnutrition</a></li>
+                    <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+                    <li><a href="account.html">Get Involved</a></li>
+                    <li><a href="resource.html">Resources/References</a></li>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="developers.html">Meet the Developers</a></li>
+                </ul>
 
-    </nav>
-<div class="search-title">  
+            </nav>
+<div class="main-content" >
 <h1>Bites of Health</h1>
-</div>
-<div class="search">
-    <input type="text" id="searchBar" placeholder="Search recipes...">
-</div>
+      
      <!-- Filter Buttons-->
       <div class="filters">
         <button onclick="filterRecipes('All')">All</button>
@@ -46,14 +44,14 @@
         <button onclick="filterRecipes('Lunch')">Lunch</button>
         <button onclick="filterRecipes('Dinner')">Dinner</button>
         <button onclick="filterRecipes('Vegetarian')">Vegetarian</button>
-      </div>
+        <button onclick="filterRecipes('Snacks')">Snacks</button>
+        <button onclick="filterRecipes('Kid friendly')">Kid friendly</button>
+        </div>
 
       <!--Recipe Cards-->
-
-      <div class="recipe-container" id="recipeContainer">
-    <!--breakfast-->
-        <div class="recipe-card" data-category="Breakfast Vegetarian">
-            <img src="images/pb oat.jpg" alt="oatmeal">
+    <div class="recipe-container">
+        <div class="recipe-card" data-category="Breakfast Vegetarian All">
+            <img src="images/recipe_images/pb oat.jpg" alt="oatmeal">
             <h3> Oatmeal with Banana & Peanut Butter</h3>
             <p> Affordable, nutritious breakfast.</p>
             <ul>
@@ -63,11 +61,10 @@
                 <li>Ingredients: Rolled oats, banana, peanut butter, milk/water, cinnamon</li>
             </ul>
       </div>
-      </div>
 
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Breakfast">
-            <img src="images/scrambled egg.webp" alt="Scrambled Eggs">
+ 
+        <div class="recipe-card" data-category="Breakfast All">
+            <img src="images/recipe_images/scrambled egg.webp" alt="Scrambled Eggs">
             <h3> Scrambled egg with veggies</h3>
             <p> Affordable, nutritious breakfast.</p>
             <ul>
@@ -77,11 +74,10 @@
                 <li>Ingredients: 2 eggs, spinach, tomatoes, onions, oil</li>
             </ul>
       </div>
-      </div>
 
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Breakfast Vegetarian">
-            <img src="images/yogurt.jpg" alt="Yogurt">
+     
+        <div class="recipe-card" data-category="Breakfast Vegetarian All">
+            <img src="images/recipe_images/yogurt.jpg" alt="Yogurt">
             <h3> Yogurt with Fruit and seeds</h3>
             <p> Affordable, nutritious breakfast.</p>
             <ul>
@@ -91,11 +87,9 @@
                 <li>Ingredients:Plain yogurt, seasonal fruit, chia/sunflower seeds</li>
             </ul>
       </div>
-      </div>
 
-      <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Lunch Vegetarian">
-            <img src="images/chickpea-salad.jpg" alt="Chickpea & Tomato Salad">
+        <div class="recipe-card" data-category="Lunch Vegetarian All">
+            <img src="images/recipe_images/chickpea-salad.jpg" alt="Chickpea & Tomato Salad">
             <h3> Chickpea & Tomato Salad</h3>
             <p> Affordable, nutritious, delicious lunch.</p>
             <ul>
@@ -105,11 +99,10 @@
                 <li>Ingredients: Chickpeas, cherry tomatoes, cucumbers, lemon juice, olive oil</li>
             </ul>
       </div>
-      </div>
 
-        <div class="recipe-container" id="recipeContainer">
-        <div class="recipe-card" data-category="Lunch Vegetarian">
-            <img src="images/lentil soup.jpg" alt="Lentil & vegetable soup">
+     
+        <div class="recipe-card" data-category="Lunch Vegetarian All">
+            <img src="images/recipe_images/lentil soup.jpg" alt="Lentil & vegetable soup">
             <h3> Lentil & Vegetable Soup</h3>
             <p> Affordable, nutritious, delicious lunch.</p>
             <ul>
@@ -119,38 +112,221 @@
                 <li>Ingredients: Lentils, carrots, onions, tomatoes, spinach, spices</li>
             </ul>
       </div>
+
+     
+        <div class="recipe-card" data-category="Lunch Vegetarian All ">
+            <img src="images/recipe_images/brownrice-bowl.jpg" alt="Brown Rice & Black Bean Bowl">
+            <h3> Brown Rice & Black Bean Bowl</h3>
+            <p> Affordable, nutritious, delicious lunch.</p>
+            <ul>
+                <li> Time: 25 min</li>
+                <li> Calories: 400kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients: Brown rice, black beans, corn, salsa, optional egg</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Dinner Vegetarian All">
+            <img src="images/recipe_images/tofu noodle.jpg" alt="Vegetable Stir-Fry with Tofu">
+            <h3> Vegetable Stir-Fry with Tofu</h3>
+            <p> Affordable, nutritious, and vibrant Dinner .</p>
+            <ul>
+                <li> Time: 25 min</li>
+                <li> Calories: 350kcal</li>
+                <li> Cost: $2.00 per serving</li>
+                <li>Ingredients: Mixed vegetables, tofu, garlic, soy sauce, rice/noodles</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Dinner All">
+            <img src="images/recipe_images/chicken veggies.jpeg" alt="Baked Chicken & Roasted Vegetables">
+            <h3> Baked Chicken & Roasted Vegetables</h3>
+            <p> Affordable, nutritious, and vibrant Dinner .</p>
+            <ul>
+                <li> Time: 45 min</li>
+                <li> Calories: 450kcal</li>
+                <li> Cost: $2.50 per serving</li>
+                <li>Ingredients: Chicken drumsticks, carrots, zucchini, potatoes, oil/spices</li>
+            </ul>
+      </div>
+      
+        <div class="recipe-card" data-category="Dinner Vegetarian All">
+            <img src="images/recipe_images/curry.jpg" alt="Vegetable Curry with Chapati">
+            <h3> Vegetable Curry with Chapati</h3>
+            <p> Affordable, nutritious, and vibrant Dinner .</p>
+            <ul>
+                <li> Time: 40 min</li>
+                <li> Calories: 400kcal</li>
+                <li> Cost: $1.80 per serving</li>
+                <li>Ingredients:Seasonal vegetables, tomato-based curry, spices, whole wheat chapati</li>
+            </ul>
+      </div>
+
+      
+        <div class="recipe-card" data-category="Dinner Vegetarian All">
+            <img src="images/recipe_images/bellpeppers.jpg" alt="Stuffed Bell Peppers">
+            <h3> Stuffed Bell Peppers</h3>
+            <p> Affordable, nutritious, and vibrant Dinner .</p>
+            <ul>
+                <li> Time: 45 min</li>
+                <li> Calories: 350kcal</li>
+                <li> Cost: $2.00 per serving</li>
+                <li>Ingredients:Bell peppers, rice, beans, diced vegetables, spices</li>
+            </ul>
+      </div>
+
+       
+        <div class="recipe-card" data-category="Snacks Vegetarian All">
+            <img src="images/recipe_images/hummus.webp" alt="veggie and humus">
+            <h3>Veggie sticks with Hummus </h3>
+            <p> Delicious and nutritious snacks</p>
+            <ul>
+                <li> Time: 10 min</li>
+                <li> Calories: 180kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients:carrots, cucumber, hummus (of your choice) optional: pinch of salt or pepper</li>
+            </ul>
+      </div>
+
+   
+        <div class="recipe-card" data-category="Snacks Vegetarian All">
+            <img src="images/recipe_images/smoothie.jpg" alt="Fruit Smoothie">
+            <h3>Fruit Smoothie </h3>
+            <p> Delicious and nutritious snacks</p>
+            <ul>
+                <li> Time: 5 min</li>
+                <li> Calories: 250kcal</li>
+                <li> Cost: $1.80 per serving</li>
+                <li>Ingredients:banana, spinach, yogurt, milk or water, optional: honey or protein powder</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Snacks Vegetarian All">
+            <img src="images/recipe_images/apple pb.webp" alt="Apple and peanut butter">
+            <h3> Apple slice with peanut butter</h3>
+            <p> Delicious and nutritious snacks</p>
+            <ul>
+                <li> Time: 5 min</li>
+                <li> Calories: 220kcal</li>
+                <li> Cost: $.90 per serving</li>
+                <li>Ingredients:apple and peanut butterr</li>
+            </ul>
+      </div>
+
+   
+        <div class="recipe-card" data-category="Snacks Vegetarian All">
+            <img src="images/recipe_images/boiled eggs.webp" alt="Boiled eggs">
+            <h3> Boiled Eggs</h3>
+            <p> Delicious and nutritious snacks</p>
+            <ul>
+                <li> Time: 10 min</li>
+                <li> Calories: 160kcal</li>
+                <li> Cost: $0.70 per serving</li>
+                <li>Ingredients: eggs, optional: black pepper, salt, paprika</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Snacks Vegetarian All">
+            <img src="images/recipe_images/crackers.webp" alt="Cheese and Cracker">
+            <h3>Crackers and Cheese </h3>
+            <p> Delicious and nutritious snacks</p>
+            <ul>
+                <li> Time: 3-5 min</li>
+                <li> Calories: 200kcal</li>
+                <li> Cost: $1.00 per serving</li>
+                <li>Ingredients: whole grain crackers, cheddar, mozzarella cheese optional: hummus</li>
+            </ul>
+      </div>
+
+     
+        <div class="recipe-card" data-category="Kid friendly All">
+            <img src="images/recipe_images/quesadilla.jpg" alt="Quesadilla">
+            <h3> Veggie Quesadilla</h3>
+            <p> Delicious and affordable Meals</p>
+            <ul>
+                <li> Time: 10 min</li>
+                <li> Calories: 300kcal</li>
+                <li> Cost: $1.20 per serving</li>
+                <li>Ingredients: beans, cheese, flour tortilla, veggies</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Kid friendly All">
+            <img src="images/recipe_images/spaghetti.jpg" alt="spaghetti">
+            <h3>One-Pot Spaghetti</h3>
+            <p> Delicious and affordable Meals</p>
+            <ul>
+                <li> Time: 15 min</li>
+                <li> Calories: 315kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients:pasta, canned tomato sauce, garlic powder, salt, olive oil, optional: ground/turkey meat (if so, no longer Vegetarian)</li>
+            </ul>
+      </div>
+
+   
+        <div class="recipe-card" data-category="Kid friendly All">
+            <img src="images/recipe_images/baked potatoe.jpg" alt="Loaded Baked Potatoes">
+            <h3>Loaded Baked Potatoes</h3>
+            <p> Delicious and affordable Meals</p>
+            <ul>
+                <li> Time: 50 min</li>
+                <li> Calories: 315kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients: Potatoes, shredded cheese, frozen broccoli, sour cream</li>
+            </ul>
+      </div>
+
+     
+        <div class="recipe-card" data-category="Kid friendly All">
+            <img src="images/recipe_images/grilled cheese.jpeg" alt="grilled cheese with veggie soup">
+            <h3>Veggie Soup with Grilled Cheese</h3>
+            <p> Delicious and affordable Meals</p>
+            <ul>
+                <li> Time: 50 min</li>
+                <li> Calories:400 kcal</li>
+                <li> Cost: $1.50 per serving</li>
+                <li>Ingredients: Carrots, potatoes, onion, broth, bread, cheese</li>
+            </ul>
+      </div>
+
+        <div class="recipe-card" data-category="Kid friendly All">
+            <img src="images/recipe_images/bean and cheese taco.jpg" alt="Bean & Cheese Tacos">
+            <h3>Bean & Cheese Tacos</h3>
+            <p> Delicious and affordable Meals</p>
+            <ul>
+                <li> Time: 15-20 min</li>
+                <li> Calories: 350kcal</li>
+                <li> Cost: $1.25 per serving</li>
+                <li>Ingredients: Refried beans, cheese, lettuce, tortillas</li>
+            </ul>
+      </div>
         </div>
+      <button id="backToTop">↑ Back to Top</button>
+        </div>  
+            <footer>
 
+                    <div>
+                        <p class="copy-right" >2025 Bridge the Bite. All rights reserved.</p>
+                    </div>
 
+                    <div class="link-group">
 
-        <footer>
+                        <button class="footer-link" onclick="openIG()"></a>
+                            <img class="footer-icon" src="images/IG.png" alt="instagram-logo"> 
+                        </button>
 
-            <div>
-                <p class="copy-right" >2025 Bridge the Bite. All rights reserved.</p>
-            </div>
+                        <button class="footer-link" onclick="openFB()">
+                            <img class="footer-icon" src="images/FB.png" alt="facebook-logo"> 
+                        </button>
+                        
+                        <button class="footer-link" onclick="openLI()">
+                            <img class="footer-icon" src="images/LI.png" alt="linkedin-logo"> 
+                        </button>
 
-            <div class="link-group">
+                    </div>
 
-                <button class="footer-link" onclick="openIG()"></a>
-                    <img class="footer-icon" src="images/IG.png" alt="instagram-logo"> 
-                </button>
-
-                <button class="footer-link" onclick="openFB()">
-                    <img class="footer-icon" src="images/FB.png" alt="facebook-logo"> 
-                </button>
-                
-                <button class="footer-link" onclick="openLI()">
-                    <img class="footer-icon" src="images/LI.png" alt="linkedin-logo"> 
-                </button>
-
-            </div>
-
-        </footer>
-
-        <script src="scripts/global.js"></script>
-        <script src="recipe.js"></script>
-
-        </div>
-        </div>
+            </footer>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/recipe.js"></script>
 </body>
 </html>

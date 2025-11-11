@@ -17,53 +17,72 @@
       <label for="nav-toggle">
         <img class="nav-logo" src="images/nav_image.png" alt="Menu" />
       </label>
-        <ul class="nav-menu">
-            <li><a href="recipe.html">Recipes</a></li>
-            <li><a href="malnutrition.html">About Malnutrition</a></li>
-            <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
-            <li><a href="">Resources/References</a></li>
-            <li><a href="homepage.html">Home Page</a></li>
-            <li><a href="developers.html">Meet the Developers</a></li>
-        </ul>
+      <ul class="nav-menu">
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="malnutrition.html">About Malnutrition</a></li>
+        <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+        <li><a href="">Resources/References</a></li>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="developers.html">Meet the Developers</a></li>
+      </ul>
     </nav>
-
     <main class="auth-page">
-      <section class="form-card">
-        <h1>Register</h1>
-        <form action="/submit_registration" method="POST">
-          <label for="username">Username:</label>
+      <section class="auth-card" role="region" aria-labelledby="register-title">
+        <h1 id="register-title">Create your account</h1>
+
+        <form class="auth-form" action="#" method="post" novalidate>
+          <label for="reg-username">Username:</label>
           <input
-            type="text"
-            id="username"
+            id="reg-username"
             name="username"
-            required
+            type="text"
             placeholder="@username12"
+            autocomplete="username"
+            required
           />
 
-          <label for="email">Email:</label>
+          <label for="reg-email">Email:</label>
           <input
-            type="email"
-            id="email"
+            id="reg-email"
             name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
             required
-            placeholder="myemail@email.com"
           />
 
-          <label for="password">Password:</label>
+          <label for="reg-password">Password:</label>
+          <div class="password-row">
+            <input
+              id="reg-password"
+              name="password"
+              type="password"
+              placeholder="Min 8 chars, 1 number, 1 special"
+              autocomplete="new-password"
+              minlength="8"
+              required
+              pattern="^(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?]).{8,}$"
+              title="At least 8 characters including a number and a special character"
+            />
+          </div>
+
+          <label for="reg-confirm">Confirm Password:</label>
           <input
+            id="reg-confirm"
+            name="confirm"
             type="password"
-            id="password"
-            name="password"
+            placeholder="Re-enter password"
+            autocomplete="new-password"
             required
-            placeholder="paSS-word09"
-            pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}"
-            title="At least 8 characters, include a number and a special character."
           />
 
-          <button class="sub-btn" type="submit">Register</button>
+          <button type="submit" class="btn-primary" id="reg-submit" disabled>
+            Create account
+          </button>
         </form>
-        <p class="reg-login">
-          Already have an account? <a href="form-Login.html">Login here</a>.
+
+        <p class="auth-hint">
+          Already have an account? <a href="form-Login.html">Log in</a>.
         </p>
       </section>
     </main>

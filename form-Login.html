@@ -17,42 +17,48 @@
       <label for="nav-toggle">
         <img class="nav-logo" src="images/nav_image.png" alt="Menu" />
       </label>
-        <ul class="nav-menu">
-            <li><a href="recipe.html">Recipes</a></li>
-            <li><a href="malnutrition.html">About Malnutrition</a></li>
-            <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
-            <li><a href="">Resources/References</a></li>
-            <li><a href="homepage.html">Home Page</a></li>
-            <li><a href="developers.html">Meet the Developers</a></li>
-        </ul>
+      <ul class="nav-menu">
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="malnutrition.html">About Malnutrition</a></li>
+        <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+        <li><a href="">Resources/References</a></li>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="developers.html">Meet the Developers</a></li>
+      </ul>
     </nav>
 
     <main class="auth-page">
-      <section class="form-card">
-        <h1>Login</h1>
-        <form action="/submit_login" method="POST">
+      <section class="auth-card" role="region" aria-labelledby="login-title">
+        <h1 id="login-title">Login</h1>
+
+        <form class="auth-form" action="#" method="post" novalidate>
           <label for="username">Username:</label>
           <input
-            type="text"
             id="username"
             name="username"
-            required
+            type="text"
             placeholder="@username12"
+            autocomplete="username"
+            required
           />
 
           <label for="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            placeholder="********"
-          />
+          <div class="password-row">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="********"
+              autocomplete="current-password"
+              required
+            />
+          </div>
 
-          <button class="sub-btn" type="submit">Login</button>
+          <button type="submit" class="btn-primary">Login</button>
         </form>
-        <p class="reg-login">
-          Don't have an account? <a href="form-Register.html">Register here</a>.
+
+        <p class="auth-hint">
+          Don't have an account? <a href="form-Register.html">Register here.</a>
         </p>
       </section>
     </main>
@@ -75,6 +81,5 @@
     </footer>
     <script src="scripts/global.js"></script>
     <script src="scripts/login.js"></script>
-
   </body>
 </html>
