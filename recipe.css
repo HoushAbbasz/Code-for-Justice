@@ -79,16 +79,13 @@ header input{
     box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*this adds the glow and shadow effect*/
 }
 
-#backToTop{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+
 
 /* back to the top button styling*/
 #backToTop{
     position: fixed;
-    bottom:20px;
-
+    bottom: 20px;
+    right: 20px;
     background-color: #2b6cb0;
     color:white;
     border: none;
@@ -105,5 +102,5 @@ header input{
 }
 
 
-}
+
 
