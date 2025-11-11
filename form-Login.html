@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">Bridge the Bite</h1>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <label for="nav-toggle">
+        <img class="nav-logo" src="images/nav_image.png" alt="Menu" />
+      </label>
+      <ul class="nav-menu">
+        <li><a href="recipe.html">Recipes</a></li>
+        <li><a href="malnutrition.html">About Malnutrition</a></li>
+        <li><a href="nutrition_tips.html">Nutrition Tips</a></li>
+        <li><a href="">Resources/References</a></li>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="developers.html">Meet the Developers</a></li>
+      </ul>
+    </nav>
+
+    <main class="auth-page">
+      <section class="auth-card">
+        <h1>Login</h1>
+
+        <form class="auth-form" action="#" method="post" novalidate>
+          <label for="username">Username:</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="@username12"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <div class="password-row">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="********"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-primary">Login</button>
+        </form>
+
+        <p class="auth-hint">
+          Don't have an account? <a href="form-Register.html">Register here.</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p class="copy-right">2025 Bridge the Bite. All rights reserved.</p>
+      </div>
+      <div class="link-group">
+        <button class="footer-link" onclick="openIG()">
+          <img class="footer-icon" src="images/IG.png" alt="instagram-logo" />
+        </button>
+        <button class="footer-link" onclick="openFB()">
+          <img class="footer-icon" src="images/FB.png" alt="facebook-logo" />
+        </button>
+        <button class="footer-link" onclick="openLI()">
+          <img class="footer-icon" src="images/LI.png" alt="linkedin-logo" />
+        </button>
+      </div>
+    </footer>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>
