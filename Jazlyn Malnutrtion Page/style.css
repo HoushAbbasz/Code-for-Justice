@@ -1,0 +1,327 @@
+/* ============================
+   GLOBAL STYLES
+============================ */
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+/* Page content spacing so navbar + footer don't overlap */
+.page-content {
+    padding: 14vh 2rem 13vh;
+}
+
+/* ============================
+   NAVBAR — MATCHES YOUR SCREENSHOT
+============================ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: lightgreen;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+    box-sizing: border-box;
+}
+
+/* Hide the checkbox */
+.nav-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.nav-icon {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+.hamburger-img {
+    width: 40px;
+    height: auto;
+}
+
+/* Center Title */
+.nav-title {
+    font-size: 2.3rem;
+    color: #658C58;
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* ============================
+   LEFT DROPDOWN MENU
+============================ */
+
+.nav-menu {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 220px;
+    background-color: #4C6A33; /* dark green dropdown */
+    display: none;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom-right-radius: 20px;
+    border-right: 4px solid #3f592b;
+    z-index: 5500;
+}
+
+.nav-menu li {
+    list-style: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu li a {
+    color: white;
+    font-size: 1.05rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+}
+
+.nav-menu li a:hover {
+    background-color: #3f592b;
+    border-radius: 6px;
+}
+
+/* Show menu when checkbox is checked */
+.nav-toggle:checked ~ .nav-menu {
+    display: flex;
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer{
+    background-color:  lightgreen;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.footer-icon{
+    height: 6vh;
+    width: 4vw;
+    border-radius: 1vh;
+}
+
+.footer-icon:hover{
+    transform: scale(1.08);
+}
+
+.footer-link{
+  background: none;
+  border: none
+}
+
+.copy-right{
+  font-size: 1.5rem; 
+  color: #658C58;
+  font-weight: 1000;
+  padding: 2vw;
+}
+
+.link-group{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  color: #F0E491;
+  margin: auto;
+  bottom: 1.5vh;
+  right: 2vw;
+}
+
+/* ============================
+   SECTION CARDS
+============================ */
+
+.section-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.section-card h2,
+.section-card h3 {
+  color: #658C58;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  color: #658C58;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+/* Fancy card background */
+.fancy-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f4d8 100%);
+  border-left: 8px solid #658C58;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Stylish lists */
+.styled-list li {
+  margin: 0.4rem 0;
+  padding-left: 0.6rem;
+  position: relative;
+}
+
+.styled-list li::before {
+  content: "•";
+  color: #658C58;
+  font-size: 1.3rem;
+  position: absolute;
+  left: -1rem;
+}
+
+.styled-list.ordered li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  font-weight: bold;
+}
+
+/* Cards, stats, highlight boxes */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 180px;
+  background: #F0E491;
+  padding: 1rem;
+  border-radius: 18px;
+  color: #658C58;
+  font-weight: 600;
+}
+
+.enhanced-stat {
+  background: linear-gradient(135deg, #F0E491 0%, #f7eebe 100%);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.enhanced-stat:hover {
+  transform: scale(1.05);
+}
+
+.highlight-box {
+  background: #F0E491;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border: 2px dashed #658C58;
+  color: #556445;
+  font-weight: 600;
+}
+
+/* ============================
+   ACCORDION
+============================ */
+
+.acc-btn {
+  background: #F0E491;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+  padding: 0.8rem;
+  color: #658C58;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  transition: 0.25s ease;
+}
+
+.acc-btn:hover {
+  transform: scale(1.02);
+}
+
+.acc-panel {
+  background: #fff7cc;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+  color: #444;
+}
+
+/* ============================
+   BACK TO TOP BUTTON
+============================ */
+
+.back-to-top {
+  position: fixed;
+  bottom: 12vh;
+  right: 20px;
+  width: 55px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: #658C58;
+  color: #F0E491;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+  transition: opacity 0.3s ease, transform 0.25s ease;
+  z-index: 2000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: scale(1.08);
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+@media (max-width: 992px) {
+  .nav-title { font-size: 1.9rem; }
+}
+
+@media (max-width: 768px) {
+  .nav-title { font-size: 1.6rem; }
+}
+
+@media (max-width: 576px) {
+  .nav-title { font-size: 1.3rem; }
+  .hamburger-img { width: 32px; }
+}
