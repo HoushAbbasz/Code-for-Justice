@@ -1,6 +1,5 @@
 
 .homepage {
-  text-align: center;
   padding: 15vh 20px;
   overflow: hidden;
   width: 100vw;
@@ -33,29 +32,59 @@
   }
 }
 
-.headline-section h1 {
+.right-text h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.subheading-section h4 {
+.right-text h4 {
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
 
-.subheading-section h5 {
+.right-text h5 {
   font-size: 1.25rem;
   line-height: 2;
   max-width: 600px;
   margin: 40px auto;
 }
 
+.highlights{
+  text-decoration: underline;
+}
 
-.headshot{
-  border-radius:  20px;
-  width: 15vw ;
-  height: 15vw ;
-  margin: 10px 2vw;
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  margin: auto;
+}
+
+.left-content{
+   width: 50%;
+   display: table-column;
+   margin-right: 10vw;
+}
+
+.right-content{
+   width: 50%;
+   display: table-column;
+   text-align: center;
+}
+
+ul {
+  background: rgb(101, 140, 88);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+ul li {
+  padding: 10px;
+  margin-left: 20px;
+}
+.list-container{
+  background: lightgreen;
+  border-radius: 25px;
 }
 
 /* Responsiveness */
