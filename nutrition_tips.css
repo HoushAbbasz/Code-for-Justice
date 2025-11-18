@@ -98,8 +98,8 @@ section {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 .seasonal_tips {
-    width: 200px;
-    height: 300px;
+    width: 500px;
+    height: 800px;
     display: flex;
     justify-content: center
     ;
@@ -185,3 +185,41 @@ p, h2, h3 {
   line-height: 1.6;
 }
                     /*this is the end of my nutrition tips*/
+@media (max-width: 767px) {
+  section{margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: black solid 3 rem;
+  box-shadow: 0 8px 23px rgba(0, 0, 0, 0.1);
+}
+h2, h3 {
+  color: #2c5f2d;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.header_title {
+  color: #2c5f2d;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+}
+
+@media (max-width: 576px){
+ section { 
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: 8px;
+  border: black solid 2 rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    h2, h3 {
+  color: #2c5f2d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.header_title {
+  color: #2c5f2d;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+  }
